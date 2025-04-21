@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="PT-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/contato.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="../assets/css/header.css">
+  <link rel="shortcut icon" href="../assets/img/logo-icone.png" type="image/jpg">
+  <link rel="stylesheet" href="../assets/fonts/fontawesome-free/css/all.min.css">
+  <title>Suporte | Proclim</title>
+</head>
+<body>
+  <main>
+    <!--===============================================CABEÇALHO========================================================-->
+    <header class="header" id="header">
+      <a href="../index.html"><img src="../assets/img/logo-icone.png" width="60px" alt="Proclim Logo"></a>
+      <nav class="menu" id="menu">
+        <div class="close-menu" onclick="toggleMenu()"><i class="fas fa-times"></i></div>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="sobre.html">Quem Somos</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <div class="container overlay">
+      <div class="left-section">
+        <h1>Fale Connosco</h1>
+        <p>Precisa de um ambiente impecável? Estamos prontos para ajudar!
+          Entre em contato agora e descubra como nossos serviços de limpeza podem transformar sua casa ou escritório.
+          Atendimento rápido, qualidade garantida! Entre em contacto pelo formulário, ou pelo botão do Whatsapp.</p>
+        <div class="contact-info">
+          <p><i class="fas fa-phone"></i> +244 926 737 341</p>
+          <p><i class="fas fa-envelope"></i> geral.proclim@gmail.com</p>
+        </div>
+      </div>
+      <div class="right-section no-validate">
+        <h1>Deixe Sua Mensagem</h1>
+        <form id="contatoForm">
+          <input type="text" id="NomeCompleto" name="nome_completo" placeholder="Nome Completo">
+          <span class="error-message" id="errorNomeCompleto"></span>
+
+          <input type="email" id="Email" name="email" placeholder="E-mail">
+          <span class="error-message" id="errorEmail"></span>
+
+          <div class="telefone-container">
+            <span class="prefixo">+244</span>
+            <input type="text" id="Telefone" name="telefone" placeholder="9XXXXXXXX" maxlength="9">
+          </div>
+          <span class="error-message" id="errorTelefone"></span>
+
+          <textarea id="Assunto" name="assunto" placeholder="Assunto..."></textarea>
+          <span class="error-message" id="errorAssunto"></span>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
+      <!--=====================================MODAL DE CONFIRMAÇÃO===============================================-->
+      <div id="dialogBox" class="dialog-box" style="display: none;">
+        <div class="dialog-content">
+          <div id="dialogIcon" class="dialog-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <div id="dialogText" class="dialog-text">Mensagem enviada com sucesso!</div>
+          <button id="dialogCloseBtn" class="dialog-close-btn">Fechar</button>
+        </div>
+      </div>
+
+      <!--=====================================LOADING===============================================-->
+      <div id="loadingOverlay" class="loading-overlay" style="display: none;">
+        <div class="loading-spinner"></div>
+      </div>
+    </div>
+
+    <div class="whatsapp-icon">
+      <a href="https://wa.me/+244933224949" class="fab fa-whatsapp" target="_blank"></a> <!--*******************************-->
+    </div>
+  </main>
+  <!--===============================================IMPORT JAVASCRIPT======================================================-->
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/contatoValidacao.js"></script>
+</body>
+
+</html>

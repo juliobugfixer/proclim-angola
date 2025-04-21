@@ -1,0 +1,280 @@
+ <!DOCTYPE html>
+ <html lang="PT-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/logo-icone.png" type="image/jpg">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free/css/all.min.css">
+    <title>Proclim | Home</title>
+</head>
+<body>
+    <main>
+        <!--===============================================CABEÇALHO========================================================-->
+        <header class="header" id="header">
+            <a href="index.html"><img src="assets/img/logo-icone.png" width="60px" alt="Proclim Logo"></a>
+            <nav class="menu" id="menu">
+                <div class="close-menu" onclick="toggleMenu()"><i class="fas fa-times"></i></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#QuemSomos">Quem Somos</a></li>
+                    <li><a href="pages/servicos.html">Serviços</a></li>
+                    <li><a href="pages/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+        <!--===============================================SLIDE HERO========================================================-->
+        <section>
+            <div class="carousel overlay">
+                <div class="carousel-container" id="carousel-container">
+                    <div class="carousel-slide">
+                        <div class="carousel-content">
+                            <h2>
+                                "Do pó ao brilho. Deixando o seu espaço melhor do que já é."
+                            </h2>
+                            <a href="#Servicos">Conheça os nossos serviços</a>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-content">
+                            <h2>        
+                                "Sua empresa merece um ambiente limpo, seguro e preparado para crescer."   
+                            </h2>
+                            <a href="pages/servicos.html">Conheça os nossos serviços</a>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-content">
+                            <h2>
+                                "Garantimos a higienização completa dos seus ambientes com agilidade e precisão." 
+                            </h2>
+                            <a href="pages/servicos.html">Conheça os nossos serviços</a>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="carousel-content">
+                            <h2>
+                                "O trabalho em equipa leva-nos a atingir os objectivos desejados e a satisfação mútua"
+                            </h2>
+                            <a href="pages/servicos.html">Conheça os nossos serviços</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="prev" id="prevBtn"><i class="fas fa-angle-left left"></i></button>
+                <button class="next" id="nextBtn"><i class="fas fa-angle-right right"></i></button>
+            </div>
+        </section>
+        <!--===============================================CALL-TO-ACTION========================================================-->
+        <section class="secao overlay">
+            <div class="texto">
+                <h5>Brilho puro</h5>
+                <h2>Experimente a alegria de uma casa ou escritório impecável hoje mesmo!</h2>
+                <p>Ambientes limpos trazem mais conforto, produtividade e bem-estar. 
+                    Nossa equipe especializada cuida de cada detalhe para que você aproveite um espaço sempre fresco e organizado. 
+                    Agende agora e sinta a diferença
+                </p>
+            </div>
+        </section>
+        <!--===============================================SOBRE NÓS========================================================-->
+        <section class="secao-0 overlay" id="QuemSomos">
+            <img src="assets/img/logo-icone-2.jpg" alt="">
+            <div class="texto">
+                <h2>Sobre nós</h2>
+                <p>Somos uma empresa de prestação de serviços de <strong>Limpeza Industrial</strong>, com capital
+                    totalmente de direito Angolano, criada aos 24 de Outubro de 2012.
+                </p>
+                <a href="pages/sobre.html">Saber mais</a>
+            </div>
+        </section>
+        <!--===============================================SERVIÇOS C/ ORÇAMENTO=======================================================-->
+        <section class="grade-servicos overlay" id="Servicos">
+            <div>
+                <h2 id="titulo">Nossos Serviços</h2>
+                <p class="texto">Oferecemos soluções de limpeza personalizadas  para <strong>particulares, empresas públicas e Privadas</strong>. </p>
+            </div>
+            <div class="carrossel">
+                <button class="anterior"><i class="fas fa-angle-left left"></i></button>
+                <div class="carrossel-container" id="carrosselContainer">
+                    <div class="cartao-servico">
+                        <img src="assets/img/Limpeza-diaria-contrato.jpg" alt="Limpeza Diária">
+                        <h4>Limpeza Diária por Contrato</h4>
+                        
+                        <a href="pages/servicos.html">
+                            Pedir Orçamento
+                        </a>
+                    </div>
+                    <div class="cartao-servico">
+                        <img src="assets/img/Limpeza-Diaria.jpg" alt="Limpeza Diária">
+                        <h4>Limpeza Diária</h4>
+                        
+                        <a href="pages/servicos.html">
+                            Pedir Orçamento
+                        </a>
+                    </div>
+                    <div class="cartao-servico">
+                        <img src="assets/img/Limpeza-Escritorio.jpg" alt="Limpeza de Escrtório">
+                        <h4>Limpeza de Escritório</h4>
+                        
+                        <a href="pages/servicos.html">
+                            Pedir Orçamento
+                        </a>
+                    </div>
+                    <div class="cartao-servico">
+                        <img src="assets/img/Limpeza-Industrial.jpg" alt="Limpeza Industrial">
+                        <h4>Limpeza Industrial</h4>
+                        
+                        <a href="pages/servicos.html">
+                            Pedir Orçamento
+                        </a>
+                    </div>
+                    
+                    <div class="cartao-servico">
+                        <img src="assets/img/Sanitazição.jpg" alt="Sanitação de Ambiente">
+                        <h4>Sanitização de Ambiente</h4>
+                        
+                        <a href="pages/servicos.html">
+                            Pedir Orçamento
+                        </a>
+                    </div>
+                    
+                    <div class="cartao-servico">
+                        <img src="assets/img/tapetes.jpg" alt="Limpeza de tapetes">
+                        <h4>Limpeza de tapetes</h4>
+                        
+                        <a href="pages/servicos.html">
+                            Pedir Orçamento
+                        </a>
+                    </div>
+                    
+                    <div class="cartao-servico">
+                        <img src="assets/img/jardim.jpg" alt="Pantio e Manuntenção de Jardin">
+                        <h4>Pantio, Manutenção, Jardins e Colção</h4>
+                        
+                        <a href="pages/servicos.html">
+                            Pedir Orçamento
+                        </a>
+                    </div>
+                    
+                    <div class="cartao-servico">
+                        <img src="assets/img/viva-sem-insetos.jpg" alt="viva-sem-insetos">
+                        <h4>Desinfestação de Insectos</h4>
+                        
+                        <a href="pages/servicos.html">
+                            Pedir Orçamento
+                        </a>
+                    </div>
+                    
+                    <div class="cartao-servico">
+                        <img src="assets/img/lavagem-colcao.jpg" alt="lavagem-colcao">
+                        <h4>Lavagem de Colção</h4>
+            
+                        <a href="pages/servicos.html">
+                            Pedir Orçamento
+                        </a>
+                    </div>
+                </div>
+                <button class="proximo"><i class="fas fa-angle-right right"></i></button>
+            </div>
+            <div class="consideracoes">
+                <div>
+                    <p class="texto">
+                        Fornecer serviços de limpeza excepcionais que criem ambientes mais saudáveis, felizes e
+                        confortáveis
+                        para os nossos clientes, mantendo os mais altos padrões de profissionalismo, sustentabilidade
+                        e satisfação do cliente
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!--===============================================ESTASTÍSTICAS======================================================-->
+        <section class="container-estatisticas overlay">
+            <div class="estatistica">
+                <h1 class="contador">0</h1>
+                <p>Clientes Satisfeitos</p>
+            </div>
+            <div class="estatistica">
+                <h1 class="contador">0</h1>
+                <p>Parceiros</p>
+            </div>
+            <div class="estatistica">
+                <h1 class="contador">0</h1>
+                <p>Seguidores</p>
+            </div>
+            <div class="estatistica">
+                <h1 class="contador">0</h1>
+                <p>Acidente de trabalho</p>
+            </div>
+        </section>
+
+        <!--=================================================FECHAMENTO======================================-->
+        <section class="overlay">
+            <div class="formulario">
+                <div>
+                    <h2>Transforme seu espaço com a nossa mágica de limpeza</h2>
+                    <p class="texto">Confiança, segurança e compromisso</p>
+                </div>
+                <div class="destaque-img">
+                    <img src="assets/img/borrifando.jpg" alt="limpeza diaria">
+                </div>
+            </div>
+        </section>
+        <!--===============================================FOOTER======================================================-->
+        <footer>
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <a href="index.html"><img src="assets/img/logo-icone.png" alt="Proclim Logo"></a>
+                        <p>Uma empresa de prestação de serviços de Limpeza Industrial, com capital totalmente de direito
+                            Angolano, criada aos 24 de Outubro de 2012.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Links de Navegação</h5>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#QuemSomos">Quem Somos</a></li>
+                            <li><a href="pages/servicos.html">Serviços</a></li>
+                            <li><a href="pages/contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col text-center">
+                        <div class="mb-3">
+                            <i class="fas fa-phone"></i> +244 926 737 341 <!--*******************************-->
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-envelope"></i> geral.proclim@gmail.com <!--*******************************-->
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-map-marker-alt"></i> Rua Gregório José Mendes, 31 Vila Alice - Luanda
+                        </div>
+                        <div class="social-icons">
+                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                            <a href="https://www.instagram.com/geral.proclim/" class="fab fa-instagram"></a>
+                            <a href="https://wa.me/+244933224949" class="fab fa-whatsapp"></a> <!--*******************************-->
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>. Proclim Lda. Todos os direitos reservados | Desenvolvido por <a href="#">WebNova</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!--===============================================IMPORT JAVASCRIPT======================================================-->
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/sildeServicos.js"></script>
+        <script src="assets/js/slideHero.js"></script>
+    </main>
+</body>
+
+</html>

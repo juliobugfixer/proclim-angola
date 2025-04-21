@@ -1,0 +1,183 @@
+
+/*===============================================INICIALIZAÇÕES====================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    list-style: none;
+}
+:root {
+    --azul-1: #028DD0;
+    --azul-2: #04328E;
+    --azul-3: #009dff;
+    --vermelho: rgb(251, 4, 4);
+    --botao-laranja: #f19a0e;
+    --botao-laranja-2: #ef9a13;
+    --branca: #ffffff;
+    --preta: #111111;
+    --texto-title: #555555;
+    --bg-branco-2: #edf2f7;
+    --bg-branco-3: #f2f2f2;
+    --bg-cinza: #f5f5f5;
+    --bg-cinza-2: #d3d7d6;
+    --bg-cinza-3: #888;
+    --opacidade-1: rgba(0, 0, 0, 0.4);
+    --opacidade-2: rgba(0, 0, 0, 0.5);
+    --linha-header: #e1e9ed28;
+    --instagram: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    --whatsapp: #075e54;
+    --facebook: #3b5998;
+    --linkedin: #0e76a8;
+}
+
+:root {
+    --shadow: 0 4px 4px 0 rgba(25, 67, 182, 0);
+    --shadow-1: 0 1px 0 0 #028bd071;
+    --shadow-2: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+:root {
+    --button-padding: 8px 15px;
+    --button-border-radius: 5px;
+    --card-radius: 12px;
+}
+
+/*===============================================ANIMAÇÃO SCOLL========================================================*/
+.overlay {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.overlay.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/*===============================================CABEÇALHO========================================================*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: var(--branca) !important;
+    box-shadow: var(--shadow-1);
+    border-bottom: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin-bottom: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.menu a {
+    color: var(--preta);
+    padding: 6px 2px;
+    display: block;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu a:hover {
+    border-radius: var(--button-border-radius);
+    padding: var(--button-padding);
+    background: var(--azul-1);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.fa-bars {
+    margin: 5px 0;
+    font-size: 1.5rem;
+    color: var(--preta);
+}
+
+.close-menu {
+    display: none;
+    transition: background all 0.3s ease-in;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 200px;
+        height: 100%;
+        background: var(--azul-1);
+
+        padding: 10px;
+        transition: right 0.4s ease;
+    }
+
+    .menu.active {
+        right: 0;
+    }
+
+    .menu a {
+        border-bottom: 2px solid var(--linha-header);
+        opacity: 1;
+        padding: 10px 20px;
+        color: var(--branca);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .close-menu {
+        display: block;
+        color: var(--branca);
+        font-size: 1rem;
+        text-align: right;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background: none;
+        height: auto;
+        padding: 0;
+    }
+
+    .menu a {
+        border: none;
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 480px)
+{
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+}
