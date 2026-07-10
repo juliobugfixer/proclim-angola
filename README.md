@@ -32,9 +32,3 @@ Este projeto foi desenvolvido com foco em **design moderno**, **responsividade**
 ## 🎯 Objetivo
 
 Desenvolver um website institucional moderno que fortaleça a presença digital da **Proclim**, oferecendo uma navegação intuitiva e uma apresentação profissional da empresa e de seus serviços.
-
----
-
-## 📄 Licença
-
-Este projeto foi desenvolvido para fins institucionais e educacionais.
