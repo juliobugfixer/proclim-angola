@@ -2,7 +2,7 @@
 
 Bem-vindo ao repositório do **Website Institucional da Proclim**.
 
-Este projeto foi desenvolvido com foco em **design moderno**, **responsividade** e **boa experiência do usuário**, apresentando as principais informações da empresa de forma clara, elegante e acessível.
+Este projeto é um protótipo daquele que o website oficial desenvolvido para a empresa Proclim, com foco em **design moderno**, **responsividade** e **boa experiência do usuário**, apresentando as principais informações da empresa de forma clara, elegante e acessível.
 
 ---
 
